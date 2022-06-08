@@ -12,7 +12,7 @@ import pickle
 import streamlit as st
 
 def load_data():
-    csv = os.path.join(os.path.dirname('__file__'), 'data/2016_Building_Energy_Benchmarking.csv')
+    csv = os.path.join(os.path.dirname('__file__'), '2016_Building_Energy_Benchmarking.csv')
     df = pd.read_csv(csv)
     return df
 
