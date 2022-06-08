@@ -41,4 +41,5 @@ y_pred = model.predict(df)
 
 ### Header ###
 st.title('CO2 Prediction App')
+st.write('Test')
 st.write(y_pred)
