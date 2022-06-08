@@ -6,6 +6,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import MinMaxScaler
 
 import os
+import os.path
 import pickle
 
 import streamlit as st
