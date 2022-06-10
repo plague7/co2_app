@@ -53,16 +53,17 @@ def init():
         # st.write(scores)
 
     with st.expander('Model\'s weights :'):
-        df = Utils.load_data()
-        model = Utils.loadModel()
+        st.write('Only available if model is a linear regression')
+        # df = Utils.load_data()
+        # model = Utils.loadModel()
 
-        colors = ['Positive' if c > 0 else 'Negative' for c in model.coef_]
-        fig = px.bar(
-            x=df.columns, y=model.coef_, color=colors,
-            color_discrete_sequence=['red', 'blue'],
-            labels=dict(x='Feature', y='Linear coefficient'),
-            title='Weight of each feature for predicting petal width'
-        )
-        st.plotly_chart(fig, use_container_width=True,
-                        sharing='streamlit',
-                        config={'displayModeBar': False})
+        # colors = ['Positive' if c > 0 else 'Negative' for c in model.coef_]
+        # fig = px.bar(
+        #     x=df.columns, y=model.coef_, color=colors,
+        #     color_discrete_sequence=['red', 'blue'],
+        #     labels=dict(x='Feature', y='Linear coefficient'),
+        #     title='Weight of each feature for predicting petal width'
+        # )
+        # st.plotly_chart(fig, use_container_width=True,
+        #                 sharing='streamlit',
+        #                 config={'displayModeBar': False})
